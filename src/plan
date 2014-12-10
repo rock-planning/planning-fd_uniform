@@ -14,9 +14,9 @@ function usage {
 }
 
 # Paths to planner components
-TRANSLATE="$BASEDIR/translate/translate.py"
-PREPROCESS="$BASEDIR/preprocess/preprocess"
-SEARCH="$BASEDIR/search/downward"
+TRANSLATE="$(dirname $(which uniform-planner))/uniform/translate/translate.py"
+PREPROCESS="$(dirname $(which uniform-planner))/uniform/preprocess/preprocess"
+SEARCH="$(dirname $(which uniform-planner))/uniform/search/downward"
 
 # Need to explicitly ask for GNU time (from MacPorts) on Mac OS X.
 if [[ "$(uname)" == "Darwin" ]]; then
