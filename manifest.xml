@@ -13,4 +13,5 @@
   <depend package="python" />
   <depend package="bzip2" />
   <depend package="zlib" />
+  <depend package="pypy" />
 </package>
